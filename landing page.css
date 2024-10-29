@@ -1,0 +1,292 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: white;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #B9CAC9;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.hero {
+    border-radius: 0px 0px 20px 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: white;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.auth-buttons a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.auth-buttons .login {
+    background-color: transparent;
+    border: 1px solid #333;
+}
+
+.login:hover {
+    background-color: #333;
+    color: white;
+    border: 1px solid rgb(97, 94, 94);
+}
+
+.auth-buttons .join {
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
+
+.join:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px;
+    background-color: #B9CAC9;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-text h1 {
+    font-size: 12rem;
+    font-weight: bold;
+    color: #fff;
+    z-index: 2;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 60px;
+    width: 500px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.search-bar input {
+    padding: 12px 20px;
+    width: 100%;
+    border: none;
+    border-radius: 40px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-bar button {
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.search-bar .mic-icon {
+    margin-left: 10px;
+    fill: #808080;
+}
+
+.search-bar .arrow-icon {
+    fill: black;
+    margin-right: 28px;
+    margin-top: 5px;
+    font-size: 24px;
+}
+
+.search-bar button:hover {
+    background-color: white;
+}
+
+
+.popular-skills {
+    margin-top: 20px;
+}
+
+.popular-skills span {
+    font-weight: bold;
+}
+
+.popular-skills a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+/* Freelancer Info */
+.freelancer-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.freelancer-img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.freelancer-details p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.freelancer-details ul {
+    list-style: none;
+    text-align: center;
+}
+
+.freelancer-details ul li {
+    margin: 5px 0;
+}
+
+/* Trusted Freelancers Section */
+.trusted-freelancers {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.trusted-freelancers p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.freelancer-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.freelancer-images img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.hero-image {
+    position: absolute;
+    right: 0;
+    bottom: -50px;
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+    z-index: 1;
+}
+
+.hero-image img {
+    width: 90%;
+    margin-top: 800px;
+    margin-left: 298px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.services-text {
+    margin-top: 80px;
+    margin-left: 50px;
+}
+
+.services-text h1{
+    color: black;
+    font-weight: bold;
+    font-size: 3rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.services {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.services {
+    position: relative;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.service span {
+    font-weight: bold;
+    font-size: large;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
