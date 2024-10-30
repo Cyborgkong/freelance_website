@@ -314,6 +314,7 @@ body {
 }
 
 .service-image {
+    
     position: relative;
     width: 45%;
     display: flex;
@@ -323,7 +324,7 @@ body {
 
 .service-image img {
     width: 100%;
-    height: auto;
+    height: fit-content;
     object-fit: cover;
     border-radius: 10px;
 }
