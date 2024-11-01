@@ -314,7 +314,7 @@ body {
 }
 
 .service-image {
-    
+    height: 150px;
     position: relative;
     width: 45%;
     display: flex;
@@ -323,26 +323,46 @@ body {
 }
 
 .service-image img {
+    bottom: 100%;
     width: 110%;
     height: 20%;
     object-fit: cover;
-    border-radius: 10px 10px 400px 0px;
+    border-radius: 10px; /* Optional: round corners slightly */
+}
+
+.imag {
+    margin-bottom: 40px;
+    margin-top: 60px;
 }
 
 .img {
-    margin-bottom: -60px;
-    margin-top: -28px;
+    margin-bottom: -50px;
+    margin-top: -30px;
+}
+
+.service-image::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80px; /* Adjust size of the curve */
+    height: 80px; /* Make it a circle */
+    background-color: white; /* Should match background of the container */
+    border-radius: 50%;
+    transform: translate(50%, 60%); /* Adjust position to control how much it cuts in */
 }
 
 .cta-button {
     position: absolute;
-    bottom: 15px;
-    right: 15px;
+    bottom: -15px;
+    right: -5%;
+    height: 37px;
     background-color: black;
     color: white;
     border: none;
     border-radius: 50%;
     padding: 10px;
+    size-adjust: 34px;
     cursor: pointer;
     font-size: 18px;
     transition: background-color 0.3s ease;
