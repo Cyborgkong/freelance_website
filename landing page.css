@@ -200,6 +200,13 @@ body {
     background-color: #fff;
 }
 
+.ct_btn {
+    position: absolute;
+    border: 20px;
+    left: 90%;
+    bottom: -20%;
+}
+
 /* Freelancer Info */
 .freelancer-info {
     width: 250px;
@@ -448,7 +455,7 @@ body {
     padding: 50px;
     border-radius: 30px;
     width: 87.5%;
-    bottom: -197%;
+    bottom: -170%;
     height: 30%;
     align-items: center;
 }
