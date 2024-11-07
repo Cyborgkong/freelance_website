@@ -202,9 +202,45 @@ body {
 
 .ct_btn {
     position: absolute;
-    border: 20px;
-    left: 90%;
+    left: 85%;
     bottom: -20%;
+}
+
+.bttnn {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 70%;
+    height: 50%;
+}
+
+.btn1 {
+    color: black;
+    padding: 15px;
+    width: 500%;
+    height: 500%;
+    border-radius: 50px;
+    border: 1px solid black;
+    transition: background-color 0.3s ease-in;
+}
+
+.btn2 {
+    background-color: black;
+    border-radius: 50px;
+    width: 200%;
+    height: 500%;
+    color: white;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.btn2:hover {
+    background-color: #ff5a5f;
+}
+
+.btn1:hover {
+    background-color: #ff5a5f;
+    border-color: white;
 }
 
 /* Freelancer Info */
@@ -460,6 +496,27 @@ body {
     align-items: center;
 }
 
+.why_choose {
+    margin-top: 150px;
+}
+
+.choose-text {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30%;
+
+}
+
+.choose-text h1 {
+    color: black;
+    font-weight: larger;
+    font-size: 3rem;
+}
+
+.p-txt {
+    margin-right: 20%;
+}
+
 .t-text h1 {
     font-weight: bolder;
     color: black;
@@ -473,6 +530,7 @@ body {
     margin-left: 10%;
     display: flexbox;
 }
+
 
 @media (max-width: 768px) {
     .services {
