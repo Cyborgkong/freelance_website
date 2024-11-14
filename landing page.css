@@ -755,6 +755,32 @@ footer {
     margin-top: 15px;
 }
 
+.footer-bottom {
+    position: absolute;
+    bottom: -410%;
+    border-top: 1px solid white;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.bot-left p {
+    margin-top: 20px;
+    color: white;
+}
+
+.bot-right {
+    margin-top: 20px;
+}
+
+.bot-right a {
+    text-decoration: none;
+    color: white;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
 @media (max-width: 768px) {
     .services {
         grid-template-columns: 1fr;
