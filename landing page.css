@@ -600,14 +600,16 @@ body {
 }
 
 .what-customer {
-    background-color: #B9CAC9;
+    background-color: #bccac9;
     border-radius: 50px;
     height: 50%;
     padding: 70px;
     display: flex;
     gap: 40px;
+    backdrop-filter: blur(20px);
     margin: 20px;
     position: absolute;
+    padding-bottom: 20%;
     bottom: -320%;
 }
 
@@ -625,12 +627,17 @@ body {
 }
 
 .what-btn button{
-    border: 1px solid black;
+    border: 2px solid rgb(150, 149, 149);
     border-radius: 50%;
     background-color: transparent;
     margin-top: 10px;
     cursor: pointer;
     padding: 5px;
+    transition: border-color 0.5s ease;
+}
+
+.what-btn button:hover {
+    border: 2px solid black;
 }
 
 .right {
@@ -647,7 +654,7 @@ body {
 .profile img {
     border-radius: 50px;
     width: 70px;
-    height: 80px;
+    height: 70px;
 }
 
 .right svg {
@@ -682,19 +689,35 @@ body {
 .start button {
     background-color: black;
     color: white;
+    border: 1px solid black;
     margin-top: 10px;
     border-radius: 30px;
     padding: 15px;
+    font-weight:bold ;
     font-size:15px;
     border: none;
-    width: 20%;
+    width: 15%;
+    cursor: pointer;
+    content: black;
+    transition: background-color 0.8s ease;
 }
 
-.start button a {
+.start button:hover {
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+}
+
+.start a {
     text-decoration: none;
     color: white;
-    font-family: Verdana, Geneva, Tahoma,;
-    border: none;
+    font-weight: bold;
+    border: 30px;
+    transition: border-color 0.3s ease;
+}
+
+.start button a:hover {
+    color: black;
 }
 
 footer {
@@ -703,7 +726,7 @@ footer {
     display: flex;
     padding: 50px;
     justify-content: space-between;
-    height: 100%;
+    height: 150%;
 }
 
 .footer-logo {
@@ -713,14 +736,14 @@ footer {
 
 .footer-logo img {
     width: 50px;
-    background-color: rgb(255, 255, 255);
+    background-color:#B9CAC9;
     height: 50px;
     margin-right: 5px;
 }
 
 .footer-left p {
     font-size: 15px;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .socials {
@@ -730,6 +753,7 @@ footer {
 .socials a {
     text-decoration: none;
     color: white;
+    padding: 3px;
 }
 
 .socials img {
@@ -752,22 +776,28 @@ footer {
     text-decoration: none;
     display: flex;
     color: rgb(206, 206, 206);
-    margin-top: 15px;
+    margin-top: 20px;
+}
+
+.footer-right a:hover {
+    color: white;
 }
 
 .footer-bottom {
     position: absolute;
-    bottom: -410%;
+    bottom: -409%;
     border-top: 1px solid white;
     display: flex;
     align-items: center;
-    width: 90%;
+    width: 92%;
     justify-content: space-between;
 }
 
 .bot-left p {
     margin-top: 20px;
     color: white;
+    text-align: center;
+    align-items: center;
 }
 
 .bot-right {
@@ -776,9 +806,12 @@ footer {
 
 .bot-right a {
     text-decoration: none;
-    color: white;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    color: rgb(199, 199, 199);
+    padding: 10px;
+}
+
+.bot-right a:hover {
+    color: rgb(255, 252, 252);
 }
 
 @media (max-width: 768px) {
