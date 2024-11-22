@@ -1,0 +1,210 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    color: #333;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #eeeeee;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.logo {
+    font-size: 20px;
+    display: flex;
+    font-weight: bold;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo img {
+    width: 35px;
+    height: 35px;
+    background-color:#bdd1d0;
+    border-radius: 7px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.nav a {
+    display:block;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    padding: 6px;
+    border-radius: 20px;
+    list-style:none;
+    height: 10%;
+    gap: 8px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+.nav a h4 {
+    height: 15px;
+    padding-right: 55%;
+}
+
+.nav a.active, .nav a:hover {
+    background:#b1d4d3;
+    box-shadow: rgba(0, 0, 0, 0.10);
+}
+
+.promo {
+    background: #e7f9f3;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.promo button {
+    background: #2ecc71;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sign-out {
+    margin-top: auto;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 20px;
+    background: white;
+    align-items: center;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.right { 
+    display: flex;
+    margin-left: 50%;
+    padding-right: 20px;
+    border-right: 1px solid #ddd;
+    height: 40px;
+    align-items: center;
+}
+
+.right a {
+    text-decoration: none;
+    color: black;
+    padding : 5px;
+}
+
+.profile {
+    align-items: center;
+    margin-right: 60px;
+}
+
+.user {
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+}
+
+.user span {
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 90%;    
+    justify-content: start;
+    padding-left: 10px;
+}
+
+.user p {
+    font-size: smaller;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.user a {
+    align-items: center;
+    padding-left: 70px;
+}
+
+.user img {
+    width: 40px;
+    height: auto;
+}
+
+.main-header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.new-project {
+    background:#bdd1d0;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 60%;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.tab {
+    background: rgb(253, 253, 253);
+    padding: 10px 20px;
+    color: grey;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tab.active {
+    background:#bdd1d0;
+    color: black;
+    font-weight: bold;
+    border-color:#b1d4d3;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.pro-name {
+    display: flexbox;
+    padding: 10px;
+    align-items: center;
+}
+
+.pro-name h5 {
+    font-weight: lighter;
+    color: black;
+    font-size: medium;
+}
+
+.pro-name input {
+    border-radius: 5px;
+    border: none;
+    border: 1px solid rgb(100, 99, 99);
+    padding: 10px;
+    width: 40%;
+}
