@@ -173,8 +173,9 @@ main {
 }
 
 .tab {
-    background: #f5f6f8;
+    background: rgb(253, 253, 253);
     padding: 10px 20px;
+    color: grey;
     border: 1px solid black;
     border-radius: 5px;
     cursor: pointer;
@@ -182,8 +183,10 @@ main {
 
 .tab.active {
     background:#bdd1d0;
-    color: white;
+    color: black;
+    font-weight: bold;
     border-color:#b1d4d3;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
 /* Table */
