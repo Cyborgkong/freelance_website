@@ -22,6 +22,8 @@ body {
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
+    position: relative;
+    z-index: 10;
 }
 
 .navbar .logo {
@@ -97,23 +99,71 @@ body {
     border: 1px solid #333;
 }
 
-/*.login:hover {
-    background-color: #333;
-    color: white;
-    border: 1px solid rgb(97, 94, 94);
-}*/
-
 .auth-buttons .join {
     background-color: #333;
     color: #fff;
     border: none;
 }
 
-/*.join:hover {
-    background-color: transparent;
-    color: black;
-    border: 1px solid black;
-}*/
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px;
+    }
+
+    .navbar ul {
+        display: none; /* Hide the menu items by default */
+        position: absolute;
+        position: absolute;
+        top: 70px; /* Place the menu below the navbar */
+        left: 0;
+        background-color: teal;
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        text-align: center;
+        z-index: 1;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar ul li a {
+        font-size: 18px;
+    }
+
+    .navbar ul li a::after {
+        display: none; /* Remove underline effect in mobile view */
+    }
+
+    .hamburger {
+        display: flex; /* Show the hamburger icon */
+    }
+
+    /* Show the menu when active */
+    .navbar.active ul {
+        display: flex; /* Display the menu when active */
+    }
+}
+
 
 /* Hero Section */
 .hero {
@@ -797,7 +847,7 @@ footer {
 
 .footer-bottom {
     position: absolute;
-    bottom: -409%;
+    bottom: -408%;
     border-top: 1px solid white;
     display: flex;
     align-items: center;

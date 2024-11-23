@@ -5,29 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Freelance Service Portal</title>
     <link rel="stylesheet" href="landing page.css" />
+    <script src="scripts.js"></script>
   </head>
   <body>
-    <!-- Header Section -->
-    <header>
-      <div class="navbar">
-        <div class="logo">
+<!-- Header Section -->
+<header>
+  <div class="navbar">
+      <div class="logo">
           <img src="images/link_2499572 (1).png" height="40px" alt="Logo" />
           FUSION
-        </div>
-        <nav>
-          <ul>
-            <li><a href="#">Find Freelancers</a></li>
-            <li><a href="#">Find Jobs</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Solutions</a></li>
+      </div>
+      <nav>
+          <ul class="nav-links">
+              <li><a href="#">Find Freelancers</a></li>
+              <li><a href="#">Find Jobs</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Solutions</a></li>
           </ul>
-        </nav>
-        <div class="auth-buttons">
+      </nav>
+      <div class="auth-buttons">
           <a href="dashboard.html" class="login">Log in</a>
           <a href="#" class="join">Join us</a>
-        </div>
       </div>
-    </header>
+      <!-- Hamburger Icon -->
+      <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+  </div>
+</header>
 
     <!-- Main Section -->
     <main>
@@ -138,6 +145,7 @@
         </section>
       </div>
     </main>
+    
     <div class="services-text">
       <h1>POPULAR SERVICES</h1>
       <p>
