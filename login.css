@@ -16,7 +16,7 @@
     padding: 40px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
+    width: 450px;
     text-align: center;
 }
 
@@ -27,6 +27,24 @@
     background-color: hsl(177, 18%, 78%);
     padding: 10px;
     margin-bottom: 20px;
+}
+
+.remember-me {
+    font-weight: normal;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+.remember-me input {
+    margin-right: 5px;
+    margin-top: 15px;
+}
+
+.bott {
+    justify-content: space-between;
+    display: flex;
 }
 
 .sign-in-box h1 {
