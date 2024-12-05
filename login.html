@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <section class="page">
-        
+    <section class="sign-in-container">
+        <div class="sign-in-box">
+            <img src="images/link_2499572 (1).png" alt="Logo">
+            <h1>Welcome back!</h1>
+            <p>Don't have an account yet? <a href="sign-up.html">Sign up now</a></p>
+            <form action="/dashboard" method="POST">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                
+                <button type="submit" class="sign-in-btn">Login</button>
+            </form>
+        </div>
     </section>
 </body>
 </html>

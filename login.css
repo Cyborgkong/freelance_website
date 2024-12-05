@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sign-in-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.sign-in-box {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+.sign-in-box img {
+    width: 40px;
+    height: auto;
+    border-radius: 10px;
+    background-color: hsl(177, 18%, 78%);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.sign-in-box h1 {
+    font-size: 2.5rem;
+    color: #2C3E50;
+    margin-bottom: 20px;
+}
+
+.sign-in-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+input:focus {
+    border-color: #3498DB;
+    outline: none;
+}
+
+.sign-in-btn {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+}
+
+.sign-in-btn:hover {
+    background-color: hsl(177, 18%, 78%);
+}
+
+.sign-in-box p {
+    margin-top: 10px;
+}
+
+.sign-in-box p a {
+    color: #2980B9;
+    text-decoration: none;
+}
+
+.sign-in-box p a:hover {
+    text-decoration: underline;
+}
