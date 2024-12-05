@@ -29,6 +29,13 @@
     margin-bottom: 20px;
 }
 
+.side-image {
+    height: 73.5vh;
+    width: 30%;
+    border-radius: 0 60px 60px 0; 
+
+}
+
 .remember-me {
     font-weight: normal;
     font-size: 0.9rem;
