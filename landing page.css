@@ -311,7 +311,7 @@ body {
 }
 
 .ct_btn {
-    position: absolute;
+    position: absolute  ;
     left: 85%;
     bottom: -20%;
 }
