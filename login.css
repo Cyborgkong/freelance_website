@@ -9,12 +9,15 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-direction: row; /* Align items in a row */
 }
 
 .sign-in-box {
     background-color: white;
     padding: 40px;
-    border-radius: 8px;
+    padding-right: 20%;
+    padding-left: 20%;
+    border-radius: 10px 0 0 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 450px;
     text-align: center;
@@ -29,10 +32,41 @@
     margin-bottom: 20px;
 }
 
+.password-container {
+    width: 105%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 50px; /* Space for the eye icon */
+}
+
+.password-container svg {
+    margin-bottom: 15px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    transition: transfor, 0.2s;
+}
+
+.toggle-password:hover {
+    transform: scale(1.1);
+    color: #3498DB; 
+    
+}
+
 .side-image {
-    height: 73.5vh;
-    width: 30%;
-    border-radius: 0 60px 60px 0; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height: 73.9vh;
+    width: 20%;
+    border-radius: 0 10px 10px 0; 
+    object-fit: cover; 
 }
 
 .remember-me {
