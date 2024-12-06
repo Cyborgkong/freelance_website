@@ -33,7 +33,6 @@
     height: 73.5vh;
     width: 30%;
     border-radius: 0 60px 60px 0; 
-
 }
 
 .remember-me {
@@ -42,6 +41,10 @@
     white-space: nowrap;
     display: flex;
     align-items: center;
+}
+
+.remember-me span {
+    margin-bottom: 5px;
 }
 
 .remember-me input {
