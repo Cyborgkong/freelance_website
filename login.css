@@ -121,6 +121,24 @@ input:focus {
     outline: none;
 }
 
+.sign-in-btn button {
+    text-decoration: none;
+    border: none;
+}
+
+.button-link {
+    text-decoration: none; /* Remove underline */
+}
+
+.button-link .sign-in-btn {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Some padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
 .sign-in-btn {
     background-color: black;
     color: white;
